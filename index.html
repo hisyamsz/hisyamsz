@@ -16,61 +16,84 @@
     <script type="module" src="src/js/components/Footer.js"></script>
     <title>Hisyam Santoso</title>
   </head>
-  <body class="bg-amber-50">
+  <body
+    class="bg-slate-50 antialiased selection:bg-primary selection:text-white"
+  >
     <!-- Header Start -->
     <nav-header></nav-header>
     <!-- Header End -->
 
     <!-- Hero Start -->
-    <section id="home" class="pb-24 pt-28">
+    <section id="home" class="pb-24 pt-36">
       <div class="container">
-        <div class="flex flex-wrap">
-          <div class="self-center w-full px-4 mb-0 md:w-1/2 xl:pl-32">
-            <h1 class="mb-2 text-xl font-semibold text-primary lg:text-3xl">
-              Hello 👋,
+        <div class="flex flex-wrap items-center">
+          <div class="w-full px-4 mb-10 md:w-1/2 xl:pl-32">
+            <h1
+              class="mb-3 text-sm font-bold tracking-widest text-secondary uppercase"
+            >
+              Hello
             </h1>
-            <h2 class="mb-4 text-3xl font-bold text-dark lg:text-5xl">
-              I'm
-              <span
-                id="auto-type"
-                class="relative border-b-4 border-b-primary"
-              ></span>
+            <h2
+              class="mb-5 text-4xl font-extrabold text-dark md:text-5xl lg:text-6xl lg:leading-tight"
+            >
+              I'm <br class="hidden md:block" />
+              <span id="auto-type" class="relative text-primary"></span>
             </h2>
             <p
-              class="mb-10 font-medium leading-relaxed text-justify text-secondary lg:text-lg"
+              class="mb-8 font-medium leading-relaxed text-secondary lg:text-lg max-w-md"
             >
-              Mahasiswa Teknik Informatika
-              <br />
-              <span class="font-bold text-primary">Graduate Candidate</span>
+              Mahasiswa Teknik Informatika <br class="hidden md:block" />
+              & Web Developer
             </p>
-            <a
-              href="https://drive.google.com/file/d/1A1LhJ0tuUyyNNiPXr5vgeleLSZQDTdaS/view?usp=sharing"
-              target="_blank"
-              class="px-8 py-3 text-base font-semibold text-white transition duration-300 ease-in-out rounded-full shadow-lg bg-primary hover:opacity-90"
-              >Download CV 📝</a
+            <div
+              class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4"
             >
+              <a
+                href="#contact"
+                class="w-full sm:w-auto text-center px-8 py-3.5 text-base font-bold text-white transition-all duration-300 ease-in-out border-2 border-primary rounded-full shadow-lg bg-primary hover:shadow-primary/50 hover:-translate-y-1"
+              >
+                Hire Me
+              </a>
+              <a
+                href="#portfolio"
+                class="w-full sm:w-auto text-center px-8 py-3.5 text-base font-bold transition-all duration-300 ease-in-out border-2 rounded-full text-primary border-primary hover:bg-primary hover:text-white hover:-translate-y-1"
+              >
+                View Works
+              </a>
+            </div>
           </div>
-          <div class="self-end w-full px-4 md:w-1/2">
-            <div class="relative mt-10 lg:mt-0 lg:right-0">
-              <img
-                src="img/hisyamsz.png"
-                alt="hisyamsz"
-                class="max-w-full mx-auto scale-75"
-              />
+          <div class="w-full px-4 md:w-1/2">
+            <div class="relative mt-10 lg:mt-0 right-0 flex justify-center">
+              <!-- Premium abstract blob shape behind the image -->
+              <div
+                class="relative z-10 w-64 h-64 md:w-80 md:h-80 lg:w-[400px] lg:h-[400px] rounded-[30%_70%_70%_30%/30%_30%_70%_70%] bg-[#FFF3E0] overflow-hidden flex items-end justify-center shadow-xl"
+              >
+                <img
+                  src="img/hisyamsz.png"
+                  alt="Hisyam Santoso"
+                  class="w-full max-w-[280px] lg:max-w-[340px] z-20 object-cover object-bottom"
+                />
+              </div>
               <span
-                class="absolute -translate-x-1/2 -bottom-5 -z-10 left-1/2 md:scale-110 md:-bottom-10 lg:scale-125 lg:bottom-12 xl:bottom-20"
-                ><svg
-                  width="400"
-                  height="400"
-                  viewBox="0 0 200 200"
-                  xmlns="http://www.w3.org/2000/svg"
+                class="absolute top-10 left-10 md:-left-4 lg:-left-12 -z-10 animate-[spin_10s_linear_infinite]"
+              >
+                <svg
+                  width="120"
+                  height="120"
+                  viewBox="0 0 100 100"
+                  class="text-primary/30 fill-current"
                 >
-                  <path
-                    fill="#FEB237"
-                    d="M59,-26.3C64.6,-2.2,48.8,21.6,28.2,35.9C7.6,50.2,-17.8,54.9,-35.8,43.2C-53.8,31.6,-64.3,3.7,-57,-22.8C-49.8,-49.2,-24.9,-74.1,0.9,-74.4C26.8,-74.7,53.5,-50.4,59,-26.3Z"
-                    transform="translate(100 100) scale(0.8)"
-                  /></svg
-              ></span>
+                  <circle
+                    cx="50"
+                    cy="50"
+                    r="40"
+                    stroke="currentColor"
+                    stroke-width="4"
+                    stroke-dasharray="10 10"
+                    fill="none"
+                  />
+                </svg>
+              </span>
             </div>
           </div>
         </div>
@@ -79,168 +102,420 @@
     <!-- Hero End -->
 
     <!-- About Start -->
-    <section id="about" class="pb-24 bg-gray-100 pt-28">
+    <section id="about" class="pb-24 bg-white pt-28">
       <div class="container">
-        <div class="w-full px-4 mb-6 text-center">
-          <h2 class="font-bold text-3xl text-dark mb-2 lg:text-[2.5rem]">
-            About Me
-          </h2>
-          <hr class="w-1/3 h-1 mx-auto fill-current bg-primary" />
-        </div>
-        <div class="max-w-5xl px-4 mx-auto mb-8 font-medium text-center">
-          <p
-            class="mb-4 font-medium text-justify text-amber-500 lg:text-lg md:text-center"
+        <div class="flex flex-wrap items-center">
+          <div
+            class="w-full px-4 mb-10 lg:mb-0 lg:w-5/12 xl:pl-32 flex justify-center lg:justify-start"
           >
-            "Technology is the tool, but ideas are the power."
-          </p>
-          <p
-            class="leading-loose text-secondary text-justify md:text-center lg:text-lg lg:leading-[2.5]"
-          >
-            Halo! Saya adalah mahasiswa Teknik Informatika yang sedang mendalami
-            pengembangan web, baik dari sisi tampilan (front-end) maupun logika
-            aplikasi (back-end). Saya senang membangun antarmuka yang interaktif
-            dan mudah digunakan, serta terus belajar untuk memahami cara kerja
-            aplikasi secara menyeluruh. Dalam proses belajar saya, saya telah
-            mengerjakan berbagai proyek kecil yang membantu saya memahami
-            pengembangan web secara praktis. Lewat portofolio ini, saya ingin
-            membagikan perjalanan belajar saya dan menunjukkan proyek-proyek
-            yang telah saya kerjakan.
-          </p>
-        </div>
-        <div class="flex items-center justify-center px-2">
-          <!-- Instagram -->
-          <a
-            href="https://instagram.com/hisyamsz_/"
-            target="_blank"
-            class="flex items-center justify-center border rounded-full w-9 h-9 border-slate-400 text-slate-400 hover:border-primary hover:bg-primary hover:text-white"
-          >
-            <svg
-              role="img"
-              width="20"
-              class="fill-current"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Instagram</title>
-              <path
-                d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
-              />
-            </svg>
-          </a>
-          <!-- Linkedln -->
-          <a
-            href="https://www.linkedin.com/in/hisyam-santoso-92a747279/"
-            target="_blank"
-            class="flex items-center justify-center mx-4 border rounded-full w-9 h-9 border-slate-400 text-slate-400 hover:border-primary hover:bg-primary hover:text-white"
-          >
-            <svg
-              role="img"
-              width="20"
-              class="fill-current"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>LinkedIn</title>
-              <path
-                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-              />
-            </svg>
-          </a>
-          <!-- Github -->
-          <a
-            href="https://github.com/hisyamsz"
-            target="_blank"
-            class="flex items-center justify-center border rounded-full w-9 h-9 border-slate-400 text-slate-400 hover:border-primary hover:bg-primary hover:text-white"
-          >
-            <svg
-              role="img"
-              width="20"
-              class="fill-current"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>GitHub</title>
-              <path
-                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-              />
-            </svg>
-          </a>
+            <div class="relative text-center lg:text-left">
+              <h2
+                class="relative z-10 text-4xl font-extrabold leading-tight text-dark lg:text-7xl tracking-tight lg:tracking-tighter"
+              >
+                About <br class="hidden lg:block" />
+                <span class="relative inline-block">
+                  Me
+                  <span
+                    class="absolute bottom-1 md:bottom-2 left-0 w-full h-3 md:h-4 -z-10 bg-primary/40"
+                  ></span>
+                </span>
+              </h2>
+              <!-- Decorative elements mimicking the reference image - hidden on mobile/tablet, shown on desktop -->
+              <div
+                class="absolute -top-10 -left-10 w-32 h-32 border-4 rounded-full border-primary/20 -z-10 animate-pulse hidden lg:block"
+              ></div>
+              <div
+                class="absolute -bottom-8 -right-12 w-32 h-32 bg-[radial-gradient(circle,#FEB237_2px,transparent_2px)] bg-[size:10px_10px] opacity-30 -z-10 hidden lg:block"
+              ></div>
+            </div>
+          </div>
+          <div class="w-full px-4 lg:w-7/12 lg:pl-12">
+            <div class="max-w-2xl mx-auto lg:mx-0 text-center lg:text-left">
+              <p class="mb-4 font-bold text-primary lg:text-lg">
+                "Technology is the tool, but ideas are the power."
+              </p>
+              <p
+                class="mb-8 leading-loose text-secondary lg:text-lg text-justify"
+              >
+                Halo! Saya adalah mahasiswa Teknik Informatika yang memiliki
+                ketertarikan pada pengembangan aplikasi web, mulai dari
+                membangun antarmuka yang responsif hingga merancang logika
+                back-end yang efisien. Saya senang mempelajari teknologi baru,
+                menerapkan praktik pengembangan perangkat lunak yang baik, serta
+                mengubah ide menjadi solusi digital yang bermanfaat. Melalui
+                setiap proyek yang saya kerjakan, saya terus mengembangkan
+                kemampuan dalam membangun aplikasi yang fungsional, mudah
+                digunakan, dan siap untuk kebutuhan dunia nyata.
+              </p>
+              <div
+                class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-4 mb-8"
+              >
+                <a
+                  href="#portfolio"
+                  class="w-full sm:w-auto text-center px-8 py-3.5 font-bold text-white transition-all duration-300 border-2 border-primary rounded-full bg-primary hover:shadow-lg hover:shadow-primary/50 hover:-translate-y-1"
+                  >View Works</a
+                >
+                <a
+                  href="https://drive.google.com/file/d/1A1LhJ0tuUyyNNiPXr5vgeleLSZQDTdaS/view?usp=sharing"
+                  target="_blank"
+                  class="w-full sm:w-auto text-center px-8 py-3.5 font-bold transition-all duration-300 border-2 rounded-full text-primary border-primary hover:bg-primary hover:text-white hover:-translate-y-1"
+                  >Download CV</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <!-- About End -->
 
     <!-- Skills Start -->
-    <section id="skills" class="pb-24 pt-28">
+    <section id="skills" class="pb-24 pt-28 bg-slate-50">
       <div class="container">
-        <div class="w-full px-4">
-          <div class="max-w-xl mx-auto mb-12 text-center">
-            <h1 class="font-bold text-3xl text-dark mb-2 lg:text-[2.5rem]">
-              Skills
-            </h1>
-            <hr class="w-1/3 h-1 mx-auto fill-current bg-primary" />
-          </div>
-        </div>
-        <div class="w-full px-4">
-          <div
-            class="flex flex-wrap justify-center max-w-3xl gap-10 mx-auto mb-12 sm:gap-10"
+        <div class="w-full px-4 mb-14 text-center">
+          <h2
+            class="font-extrabold text-4xl text-dark mb-4 lg:text-5xl tracking-tight"
           >
-            <!-- Basic Web -->
-            <img src="img/html-5.svg" alt="HTML 5" title="HTML 5" class="w-[18%] md:w-[12%] transition-transform duration-300 hover:scale-110 hover:-translate-y-1 cursor-pointer" />
-            <img src="img/css-3.svg" alt="CSS 3" title="CSS 3" class="w-[18%] md:w-[12%] transition-transform duration-300 hover:scale-110 hover:-translate-y-1 cursor-pointer" />
-            <img
-              src="img/javascript.svg"
-              alt="JavaScript"
-              title="JavaScript"
-              class="w-[18%] md:w-[12%] transition-transform duration-300 hover:scale-110 hover:-translate-y-1 cursor-pointer"
-            />
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
-              alt="TypeScript"
-              title="TypeScript"
-              class="w-[18%] md:w-[12%] transition-transform duration-300 hover:scale-110 hover:-translate-y-1 cursor-pointer"
-            />
+            My <span class="text-primary">Skills</span>
+          </h2>
+          <p class="font-medium text-secondary md:text-lg max-w-2xl mx-auto">
+            Teknologi dan perangkat yang saya gunakan untuk membangun solusi
+            digital yang luar biasa.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+          <!-- Frontend Card -->
+          <div
+            class="relative overflow-hidden rounded-3xl p-8 bg-gradient-to-br from-amber-400 to-orange-500 text-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group flex flex-col justify-between min-h-[400px]"
+          >
+            <div
+              class="absolute top-0 right-0 -mr-8 -mt-8 w-32 h-32 rounded-full bg-white opacity-10 transition-transform duration-500 group-hover:scale-150"
+            ></div>
+            <div>
+              <div
+                class="mb-6 inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-white/20 backdrop-blur-sm"
+              >
+                <svg
+                  class="w-8 h-8 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold mb-3 relative z-10">
+                Frontend Development
+              </h3>
+              <p
+                class="text-white/90 text-sm font-medium relative z-10 leading-relaxed"
+              >
+                Membangun antarmuka interaktif dan responsif dengan fokus pada
+                pengalaman pengguna yang luar biasa.
+              </p>
+            </div>
 
-            <!-- Frameworks & Libraries -->
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
-              alt="React.js"
-              title="React.js"
-              class="w-[18%] md:w-[12%] transition-transform duration-300 hover:scale-110 hover:-translate-y-1 cursor-pointer"
-            />
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
-              alt="Next.js"
-              title="Next.js"
-              class="w-[18%] md:w-[12%] transition-transform duration-300 hover:scale-110 hover:-translate-y-1 cursor-pointer"
-            />
-            <img
-              src="img/tailwindcss-icon.svg"
-              alt="Tailwind CSS"
-              title="Tailwind CSS"
-              class="w-[18%] md:w-[12%] transition-transform duration-300 hover:scale-110 hover:-translate-y-1 cursor-pointer"
-            />
-            <img
-              src="img/bootstrap.svg"
-              alt="Bootstrap"
-              title="Bootstrap"
-              class="w-[18%] md:w-[12%] transition-transform duration-300 hover:scale-110 hover:-translate-y-1 cursor-pointer"
-            />
+            <div class="flex flex-wrap gap-2.5 relative z-10 mt-6">
+              <div
+                class="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl px-4 py-2 shadow-sm transition-transform hover:scale-105"
+                title="HTML 5"
+              >
+                <div class="w-6 h-6 flex items-center justify-center shrink-0">
+                  <img
+                    src="img/html-5.svg"
+                    alt="HTML 5"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <span class="text-sm font-bold text-white">HTML 5</span>
+              </div>
+              <div
+                class="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl px-4 py-2 shadow-sm transition-transform hover:scale-105"
+                title="CSS 3"
+              >
+                <div class="w-6 h-6 flex items-center justify-center shrink-0">
+                  <img
+                    src="img/css-3.svg"
+                    alt="CSS 3"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <span class="text-sm font-bold text-white">CSS 3</span>
+              </div>
+              <div
+                class="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl px-4 py-2 shadow-sm transition-transform hover:scale-105"
+                title="JavaScript"
+              >
+                <div class="w-6 h-6 flex items-center justify-center shrink-0">
+                  <img
+                    src="img/javascript.svg"
+                    alt="JavaScript"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <span class="text-sm font-bold text-white">JavaScript</span>
+              </div>
+              <div
+                class="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl px-4 py-2 shadow-sm transition-transform hover:scale-105"
+                title="TypeScript"
+              >
+                <div class="w-6 h-6 flex items-center justify-center shrink-0">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                    alt="TypeScript"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <span class="text-sm font-bold text-white">TypeScript</span>
+              </div>
+              <div
+                class="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl px-4 py-2 shadow-sm transition-transform hover:scale-105"
+                title="React.js"
+              >
+                <div class="w-6 h-6 flex items-center justify-center shrink-0">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                    alt="React.js"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <span class="text-sm font-bold text-white">React.js</span>
+              </div>
+              <div
+                class="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl px-4 py-2 shadow-sm transition-transform hover:scale-105"
+                title="Next.js"
+              >
+                <div class="w-6 h-6 flex items-center justify-center shrink-0">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+                    alt="Next.js"
+                    class="w-full h-full object-contain invert"
+                  />
+                </div>
+                <span class="text-sm font-bold text-white">Next.js</span>
+              </div>
+              <div
+                class="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl px-4 py-2 shadow-sm transition-transform hover:scale-105"
+                title="Tailwind CSS"
+              >
+                <div class="w-6 h-6 flex items-center justify-center shrink-0">
+                  <img
+                    src="img/tailwindcss-icon.svg"
+                    alt="Tailwind CSS"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <span class="text-sm font-bold text-white">Tailwind CSS</span>
+              </div>
+              <div
+                class="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl px-4 py-2 shadow-sm transition-transform hover:scale-105"
+                title="Bootstrap"
+              >
+                <div class="w-6 h-6 flex items-center justify-center shrink-0">
+                  <img
+                    src="img/bootstrap.svg"
+                    alt="Bootstrap"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <span class="text-sm font-bold text-white">Bootstrap</span>
+              </div>
+            </div>
+          </div>
 
-            <!-- Backend & Version Control -->
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
-              alt="Node.js"
-              title="Node.js"
-              class="w-[18%] md:w-[12%] transition-transform duration-300 hover:scale-110 hover:-translate-y-1 cursor-pointer"
-            />
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg"
-              alt="Prisma ORM"
-              title="Prisma ORM"
-              class="w-[18%] md:w-[12%] transition-transform duration-300 hover:scale-110 hover:-translate-y-1 cursor-pointer"
-            />
-            <img src="img/git-icon.svg" alt="Git" title="Git" class="w-[18%] md:w-[12%] transition-transform duration-300 hover:scale-110 hover:-translate-y-1 cursor-pointer" />
+          <!-- Backend Card -->
+          <div
+            class="relative overflow-hidden rounded-3xl p-8 bg-gradient-to-br from-blue-500 to-indigo-600 text-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group flex flex-col justify-between min-h-[400px]"
+          >
+            <div
+              class="absolute top-0 right-0 -mr-8 -mt-8 w-32 h-32 rounded-full bg-white opacity-10 transition-transform duration-500 group-hover:scale-150"
+            ></div>
+            <div>
+              <div
+                class="mb-6 inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-white/20 backdrop-blur-sm"
+              >
+                <svg
+                  class="w-8 h-8 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold mb-3 relative z-10">
+                Backend & Databases
+              </h3>
+              <p
+                class="text-white/90 text-sm font-medium relative z-10 leading-relaxed"
+              >
+                Merancang arsitektur logika aplikasi, keamanan, dan manajemen
+                data yang tangguh di sisi server.
+              </p>
+            </div>
+
+            <div class="flex flex-wrap gap-2.5 relative z-10 mt-6">
+              <div
+                class="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl px-4 py-2 shadow-sm transition-transform hover:scale-105"
+                title="Node.js"
+              >
+                <div class="w-6 h-6 flex items-center justify-center shrink-0">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
+                    alt="Node.js"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <span class="text-sm font-bold text-white">Node.js</span>
+              </div>
+              <div
+                class="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl px-4 py-2 shadow-sm transition-transform hover:scale-105"
+                title="Express.js"
+              >
+                <div class="w-6 h-6 flex items-center justify-center shrink-0">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+                    alt="Express.js"
+                    class="w-full h-full object-contain filter brightness-0 invert"
+                  />
+                </div>
+                <span class="text-sm font-bold text-white">Express.js</span>
+              </div>
+              <div
+                class="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl px-4 py-2 shadow-sm transition-transform hover:scale-105"
+                title="Prisma ORM"
+              >
+                <div class="w-6 h-6 flex items-center justify-center shrink-0">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg"
+                    alt="Prisma ORM"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <span class="text-sm font-bold text-white">Prisma ORM</span>
+              </div>
+              <div
+                class="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl px-4 py-2 shadow-sm transition-transform hover:scale-105"
+                title="MySQL"
+              >
+                <div class="w-6 h-6 flex items-center justify-center shrink-0">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+                    alt="MySQL"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <span class="text-sm font-bold text-white">MySQL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools Card -->
+          <div
+            class="relative overflow-hidden rounded-3xl p-8 bg-gradient-to-br from-emerald-400 to-teal-500 text-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group flex flex-col justify-between min-h-[400px] md:col-span-2 lg:col-span-1"
+          >
+            <div
+              class="absolute top-0 right-0 -mr-8 -mt-8 w-32 h-32 rounded-full bg-white opacity-10 transition-transform duration-500 group-hover:scale-150"
+            ></div>
+            <div>
+              <div
+                class="mb-6 inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-white/20 backdrop-blur-sm"
+              >
+                <svg
+                  class="w-8 h-8 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold mb-3 relative z-10">
+                Tools & Devops
+              </h3>
+              <p
+                class="text-white/90 text-sm font-medium relative z-10 leading-relaxed"
+              >
+                Memanfaatkan alat bantu pengembangan untuk kolaborasi yang
+                efisien dan alur kerja yang optimal.
+              </p>
+            </div>
+
+            <div class="flex flex-wrap gap-2.5 relative z-10 mt-6">
+              <div
+                class="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl px-4 py-2 shadow-sm transition-transform hover:scale-105"
+                title="Git"
+              >
+                <div class="w-6 h-6 flex items-center justify-center shrink-0">
+                  <img
+                    src="img/git-icon.svg"
+                    alt="Git"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <span class="text-sm font-bold text-white">Git</span>
+              </div>
+              <div
+                class="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl px-4 py-2 shadow-sm transition-transform hover:scale-105"
+                title="GitHub"
+              >
+                <div class="w-6 h-6 flex items-center justify-center shrink-0">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                    alt="GitHub"
+                    class="w-full h-full object-contain filter brightness-0 invert"
+                  />
+                </div>
+                <span class="text-sm font-bold text-white">GitHub</span>
+              </div>
+              <div
+                class="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl px-4 py-2 shadow-sm transition-transform hover:scale-105"
+                title="VS Code"
+              >
+                <div class="w-6 h-6 flex items-center justify-center shrink-0">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
+                    alt="VS Code"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <span class="text-sm font-bold text-white">VS Code</span>
+              </div>
+              <div
+                class="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl px-4 py-2 shadow-sm transition-transform hover:scale-105"
+                title="Figma"
+              >
+                <div class="w-6 h-6 flex items-center justify-center shrink-0">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
+                    alt="Figma"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <span class="text-sm font-bold text-white">Figma</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -248,24 +523,20 @@
     <!-- Skills End -->
 
     <!-- Portfolio Start -->
-    <section id="portfolio" class="pb-24 bg-gray-200 pt-28">
+    <section id="portfolio" class="pb-24 bg-white pt-28">
       <div class="container">
-        <div class="w-full px-4">
-          <div class="max-w-xl mx-auto mb-8 text-center">
-            <h1 class="font-bold text-3xl text-dark mb-2 lg:text-[2.5rem]">
-              Portfolio
-            </h1>
-            <hr
-              class="w-1/3 h-1 mx-auto mb-8 fill-current bg-primary text-dark"
-            />
-            <h4 class="mb-4 text-xl font-semibold">Project Terbaru</h4>
-            <p class="font-medium text-secondary md:text-lg">
-              Berikut adalah beberapa proyek sederhana yang saya kerjakan untuk
-              mengasah keterampilan di bidang pengembangan web.
-            </p>
-          </div>
+        <div class="w-full px-4 mb-16 text-center">
+          <h2
+            class="font-extrabold text-4xl text-dark mb-4 lg:text-5xl tracking-tight"
+          >
+            Latest <span class="text-primary">Works</span>
+          </h2>
+          <p class="font-medium text-secondary md:text-lg max-w-2xl mx-auto">
+            Berikut adalah beberapa proyek yang saya kerjakan untuk mengasah
+            keterampilan di bidang pengembangan web.
+          </p>
         </div>
-        <div class="flex flex-wrap justify-center w-full gap-4 px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
           <portfolio-card
             title="LibraFlow LMS"
             image="img/libraflow-homepage.png"
@@ -275,7 +546,7 @@
             Enterprise-ready Digital Library Management System. Dilengkapi
             dengan <strong>Role-Based Access Control</strong>, Dashboard
             statistik real-time, import/export data Excel secara massal,
-            integrasi OpenAPI Swagger, hingga kalkulasi denda otomatis.
+            integrasi OpenAPI Swagger.
           </portfolio-card>
           <portfolio-card
             title="Sistem Perpustakaan (PKM)"
@@ -343,65 +614,161 @@
     <!-- Portfolio End -->
 
     <!-- Contact Start -->
-    <section id="contact" class="pb-24 pt-28">
+    <section id="contact" class="pb-24 pt-28 bg-slate-50">
       <div class="container">
-        <div class="w-full px-4">
-          <div class="max-w-xl mx-auto mb-8 text-center">
-            <h1 class="font-bold text-3xl text-dark mb-2 lg:text-[2.5rem]">
-              Contact Me
-            </h1>
-            <hr
-              class="w-1/3 h-1 mx-auto mb-4 fill-current bg-primary text-dark"
-            />
-            <p class="font-medium text-secondary md:text-lg"></p>
+        <div class="w-full px-4 mb-16 text-center">
+          <h2
+            class="font-extrabold text-4xl text-dark mb-4 lg:text-5xl tracking-tight"
+          >
+            Get In <span class="text-primary">Touch</span>
+          </h2>
+          <p class="font-medium text-secondary md:text-lg max-w-2xl mx-auto">
+            Mari berkolaborasi! Jangan ragu untuk menghubungi saya untuk
+            mendiskusikan proyek atau peluang kerja sama.
+          </p>
+        </div>
+
+        <div
+          class="flex flex-wrap max-w-5xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100"
+        >
+          <!-- Left Col: Contact Info -->
+          <div
+            class="relative w-full lg:w-5/12 p-10 bg-primary text-white flex flex-col justify-between overflow-hidden"
+          >
+            <div class="relative z-10">
+              <h3 class="text-3xl font-bold mb-4">Let's connect!</h3>
+              <p class="text-white/90 mb-8 leading-relaxed">
+                Saya selalu terbuka untuk mendiskusikan pekerjaan desain produk
+                atau peluang kemitraan.
+              </p>
+
+              <div class="space-y-6">
+                <div class="flex items-start">
+                  <svg
+                    class="w-6 h-6 mr-4 mt-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
+                  </svg>
+                  <div>
+                    <h4 class="font-semibold text-lg">Email</h4>
+                    <p class="text-white/80">hisyam.s901@gmail.com</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <svg
+                    class="w-6 h-6 mr-4 mt-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+                  <div>
+                    <h4 class="font-semibold text-lg">Lokasi</h4>
+                    <p class="text-white/80">Tangerang, Banten, Indonesia</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Abstract background shape for the contact card -->
+            <div
+              class="absolute -bottom-24 -right-24 w-64 h-64 rounded-full bg-white opacity-10"
+            ></div>
+            <div
+              class="absolute -top-10 -left-10 w-32 h-32 rounded-full bg-white opacity-10"
+            ></div>
+          </div>
+
+          <!-- Right Col: Form -->
+          <div class="w-full lg:w-7/12 p-10 lg:p-14">
+            <form action="#">
+              <div class="flex flex-wrap -mx-4 mb-6">
+                <div class="w-full md:w-1/2 px-4 mb-6 md:mb-0">
+                  <label
+                    for="name"
+                    class="block text-sm font-bold text-dark mb-2"
+                    >Nama Lengkap</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="John Doe"
+                    autocomplete="off"
+                    class="w-full p-4 bg-slate-50 border border-slate-200 rounded-xl text-dark focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors"
+                  />
+                </div>
+                <div class="w-full md:w-1/2 px-4">
+                  <label
+                    for="email"
+                    class="block text-sm font-bold text-dark mb-2"
+                    >Alamat Email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="john@example.com"
+                    autocomplete="off"
+                    class="w-full p-4 bg-slate-50 border border-slate-200 rounded-xl text-dark focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors"
+                  />
+                </div>
+              </div>
+
+              <div class="mb-6">
+                <label
+                  for="message"
+                  class="block text-sm font-bold text-dark mb-2"
+                  >Pesan Anda</label
+                >
+                <textarea
+                  id="message"
+                  placeholder="Tuliskan pesan Anda di sini..."
+                  autocomplete="off"
+                  class="w-full h-40 p-4 bg-slate-50 border border-slate-200 rounded-xl resize-none text-dark focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white transition-all duration-300 ease-in-out rounded-xl shadow-lg bg-primary hover:bg-amber-500 hover:shadow-primary/50 hover:-translate-y-1 w-full md:w-auto"
+              >
+                Kirim Pesan
+                <svg
+                  class="w-5 h-5 ml-2"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+                  />
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
-        <form action="#" class="mx-auto sm:max-w-2xl">
-          <div class="w-full px-4 mb-2">
-            <label for="name" class="text-base font-bold text-primary"
-              >Name:</label
-            >
-            <input
-              type="text"
-              id="name"
-              placeholder="Input your name"
-              autocomplete="off"
-              class="w-full p-3 mb-4 bg-gray-200 rounded-md text-dark focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
-            />
-          </div>
-          <div class="w-full px-4 mb-2">
-            <label for="name" class="text-base font-bold text-primary"
-              >Email:</label
-            >
-            <input
-              type="email"
-              id="name"
-              placeholder="Input your name"
-              autocomplete="off"
-              class="w-full p-3 mb-4 bg-gray-200 rounded-md text-dark focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
-            />
-          </div>
-          <div class="w-full px-4 mb-2">
-            <label for="name" class="text-base font-bold text-primary"
-              >Message:</label
-            >
-            <textarea
-              type="text"
-              id="name"
-              placeholder="Input your name"
-              autocomplete="off"
-              class="w-full h-32 p-3 mb-4 bg-gray-200 rounded-md resize-none text-dark focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
-            ></textarea>
-          </div>
-          <div class="w-full px-4">
-            <button
-              type="submit"
-              class="w-full px-8 py-3 text-base font-semibold text-white transition duration-300 ease-in-out rounded-full shadow-lg bg-primary hover:opacity-90"
-            >
-              Submit
-            </button>
-          </div>
-        </form>
       </div>
     </section>
     <!-- Contact End -->

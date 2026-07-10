@@ -20,11 +20,11 @@ class NavHeader extends HTMLElement {
               </button>
               <nav id="nav-menu" class="absolute hidden w-full py-5 bg-white rounded-lg shadow-lg reset-blur max-w-48 right-1 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:py-0 lg:px-6 lg:shadow-none lg:rounded-none">
                 <ul class="block lg:flex">
-                  <li class="group"><a href="#home" class="flex py-2 mx-8 text-base nav-link text-dark lg:text-lg group-hover:text-primary">Home</a></li>
-                  <li class="group"><a href="#about" class="flex py-2 mx-8 text-base nav-link text-dark lg:text-lg group-hover:text-primary">About me</a></li>
-                  <li class="group"><a href="#skills" class="flex py-2 mx-8 text-base nav-link text-dark lg:text-lg group-hover:text-primary">Skills</a></li>
-                  <li class="group"><a href="#portfolio" class="flex py-2 mx-8 text-base nav-link text-dark lg:text-lg group-hover:text-primary">Portfolio</a></li>
-                  <li class="group"><a href="#contact" class="flex py-2 mx-8 text-base nav-link text-dark lg:text-lg group-hover:text-primary">Contact</a></li>
+                  <li class="group"><a href="#home" class="flex py-2 mx-8 text-base font-medium nav-link text-dark lg:text-lg group-hover:text-primary">Home</a></li>
+                  <li class="group"><a href="#about" class="flex py-2 mx-8 text-base font-medium nav-link text-dark lg:text-lg group-hover:text-primary">About me</a></li>
+                  <li class="group"><a href="#skills" class="flex py-2 mx-8 text-base font-medium nav-link text-dark lg:text-lg group-hover:text-primary">Skills</a></li>
+                  <li class="group"><a href="#portfolio" class="flex py-2 mx-8 text-base font-medium nav-link text-dark lg:text-lg group-hover:text-primary">Portfolio</a></li>
+                  <li class="group"><a href="#contact" class="flex py-2 mx-8 text-base font-medium nav-link text-dark lg:text-lg group-hover:text-primary">Contact</a></li>
                 </ul>
               </nav>
             </div>
@@ -45,8 +45,7 @@ class NavHeader extends HTMLElement {
       });
     }
 
-    // Handle scroll for fixed navbar styling and scroll spy
-    window.addEventListener('scroll', () => {
+    const handleScroll = () => {
       const header = this.querySelector('header');
       if (header) {
         const fixedNav = header.offsetTop;
@@ -63,7 +62,7 @@ class NavHeader extends HTMLElement {
       let currentSection = 'home';
 
       sectionEls.forEach((sectionEl) => {
-          if (window.scrollY >= sectionEl.offsetTop - 60) {
+          if (window.scrollY >= sectionEl.offsetTop - 120) {
               currentSection = sectionEl.id;
           }
       });
@@ -74,7 +73,13 @@ class NavHeader extends HTMLElement {
               navLinkEl.classList.add('active');
           }
       });
-    });
+    };
+
+    // Run initially to set active state on page load/refresh
+    handleScroll();
+
+    // Run on scroll
+    window.addEventListener('scroll', handleScroll);
   }
 }
 

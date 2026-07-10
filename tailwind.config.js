@@ -7,6 +7,9 @@ module.exports = {
             padding: '16px',
         },
         extend: {
+            fontFamily: {
+                sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            },
             colors: {
                 primary: '#FEB237',
                 secondary: '#64748B',

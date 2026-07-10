@@ -19,12 +19,12 @@ class SiteFooter extends HTMLElement {
             <div class="w-full px-4 mb-12 text-slate-300 md:w-1/3">
               <h3 class="mb-4 text-2xl font-bold text-white">Portfolio</h3>
               <ul class="text-slate-300">
+                <li><a href="#portfolio" class="inline-block mb-3 text-base hover:text-primary">LibraFlow LMS</a></li>
+                <li><a href="#portfolio" class="inline-block mb-3 text-base hover:text-primary">Sistem Perpustakaan (PKM)</a></li>
                 <li><a href="#portfolio" class="inline-block mb-3 text-base hover:text-primary">Astro Blog</a></li>
                 <li><a href="#portfolio" class="inline-block mb-3 text-base hover:text-primary">Ticket Booking</a></li>
                 <li><a href="#portfolio" class="inline-block mb-3 text-base hover:text-primary">Pricing Table</a></li>
-                <li><a href="#portfolio" class="inline-block mb-3 text-base hover:text-primary">Landing Page business</a></li>
-                <li><a href="#portfolio" class="inline-block mb-3 text-base hover:text-primary">Museum of Dino</a></li>
-                <li><a href="#portfolio" class="inline-block mb-3 text-base hover:text-primary">Form Validation</a></li>
+                <li><a href="#portfolio" class="inline-block mb-3 text-base hover:text-primary">Landing Page Business</a></li>
               </ul>
             </div>
             <div class="w-full px-4 mb-12 text-slate-300 md:w-1/3">
@@ -56,7 +56,7 @@ class SiteFooter extends HTMLElement {
             <p class="mb-2 text-sm font-medium text-center text-slate-500">
               Made with ❤️ by <a href="https://instagram.com/hisyamsz_/" target="_blank" class="font-bold text-primary">Hisyam Santoso</a>. inspired from <a href="https://www.youtube.com/@sandhikagalihWPU" target="_blank" class="font-bold text-primary">WPU</a>.
             </p>
-            <p class="text-sm font-medium text-center text-slate-500">&copy; 2024</p>
+            <p class="text-sm font-medium text-center text-slate-500">&copy; 2026</p>
           </div>
         </div>
       </footer>

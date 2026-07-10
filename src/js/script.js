@@ -32,7 +32,7 @@ const typeEffect = () => {
     const currentWord = words[wordIndex];
     const currentChar = currentWord.substring(0, charIndex);
     if(dynamicText) {
-        dynamicText.textContent = currentChar;
+        dynamicText.textContent = currentChar || '\u200B';
         dynamicText.classList.add('stop-blinking');
     }
 

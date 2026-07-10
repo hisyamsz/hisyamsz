@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .hamburger {
@@ -37,27 +39,17 @@ body {
     @apply w-full h-full bg-cover bg-center absolute group-hover:scale-105 transition-all duration-500;
 }
 
-#auto-type::before {
-    @apply content-[''] h-full w-full absolute top-0 left-0 border-r-4 border-primary;
-    animation: blink 0.7s steps(12) infinite;
+#auto-type {
+    @apply border-r-4 border-primary pr-1;
+    animation: blink 0.7s infinite;
 }
 
-@keyframes animate {
-    40%,
-    60% {
-        left: calc(100% + 4px);
-    }
-    100% {
-        left: 0;
-    }
-}
-
-#auto-type.stop-blinking::before {
-    animation: none;
+#auto-type.stop-blinking {
+    border-color: #FEB237;
 }
 
 @keyframes blink {
     50% {
-        opacity: 0;
+        border-color: transparent;
     }
 }

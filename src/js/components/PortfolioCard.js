@@ -13,25 +13,26 @@ class PortfolioCard extends HTMLElement {
     const description = this.innerHTML;
 
     this.innerHTML = `
-      <div class="bg-white p-8 rounded-xl shadow-xl md:w-full h-full flex flex-col">
-        <a href="${link}" target="_blank" title="${title}" class="group flex-grow">
-          <div class="overflow-hidden rounded-md shadow-md">
-            <img src="${image}" alt="${title}" class="${imgClasses}" />
-          </div>
-          <h3 class="mt-5 mb-3 text-xl font-semibold text-dark">
-            <span class="transition duration-300 ease-in-out group-hover:border-b-2 group-hover:border-primary group-hover:opacity-90">
-              ${title}
-            </span>
-          </h3>
+      <div class="bg-white p-6 rounded-3xl shadow-sm hover:shadow-xl border border-slate-100 w-full h-full flex flex-col transition-all duration-300 group">
+        <a href="${link}" target="_blank" title="${title}" class="flex-grow block overflow-hidden rounded-2xl mb-5">
+          <img src="${image}" alt="${title}" class="${imgClasses} transform transition-transform duration-500 group-hover:scale-110" />
         </a>
-        <div class="text-base font-medium text-secondary">
-          ${description}
+        <div class="flex-grow flex flex-col">
+          <a href="${link}" target="_blank" class="mb-3 text-2xl font-bold text-dark group-hover:text-primary transition-colors duration-300 flex items-center">
+            ${title}
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2 opacity-0 -translate-x-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+          <div class="text-base leading-relaxed text-secondary mb-4">
+            ${description}
+          </div>
         </div>
       </div>
     `;
     
-    // We add some wrapper classes to the host element itself so it behaves correctly in the flex grid
-    this.className = "md:w-[40%] flex";
+    // We add some wrapper classes to the host element itself so it behaves correctly in the grid
+    this.className = "flex w-full";
   }
 }
 
