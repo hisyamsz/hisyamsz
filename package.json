@@ -5,12 +5,14 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+        "dev": "concurrently \"npx tailwindcss -i ./src/input.css -o ./src/output.css --watch\" \"npx live-server --port=3000 --no-browser\""
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "devDependencies": {
+        "concurrently": "^10.0.3",
+        "live-server": "^1.2.2",
         "tailwindcss": "^3.4.1"
     }
 }
