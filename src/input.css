@@ -60,7 +60,7 @@ body {
     transition: all 0.8s ease-out;
 }
 
-.reveal.active {
+.reveal.reveal-visible {
     opacity: 1;
     transform: translateY(0);
 }

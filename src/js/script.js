@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('active');
+                entry.target.classList.add('reveal-visible');
                 // Optional: stop observing once revealed
                 // observer.unobserve(entry.target);
             }
@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         card.classList.remove('hidden');
                         // Briefly timeout to allow transition to trigger
                         setTimeout(() => {
-                            card.classList.add('active');
+                            card.classList.add('reveal-visible');
                         }, 50);
                     } else {
                         card.classList.add('hidden');
@@ -139,4 +139,51 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    // 4. 3D Tilt Effect on Hero Avatar
+    const tiltElement = document.querySelector('.tilt-element');
+    if (tiltElement) {
+        tiltElement.addEventListener('mousemove', (e) => {
+            const rect = tiltElement.getBoundingClientRect();
+            const x = e.clientX - rect.left; // x position within the element
+            const y = e.clientY - rect.top;  // y position within the element
+            
+            // Calculate rotation values (-15 to +15 degrees)
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            const rotateX = ((y - centerY) / centerY) * -15;
+            const rotateY = ((x - centerX) / centerX) * 15;
+            
+            tiltElement.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+        });
+
+        tiltElement.addEventListener('mouseleave', () => {
+            tiltElement.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
+        });
+    }
+
+    // 5. Click to Copy Contact Info
+    const copyTriggers = document.querySelectorAll('.copy-trigger');
+    copyTriggers.forEach(trigger => {
+        trigger.addEventListener('click', async () => {
+            const copyText = trigger.getAttribute('data-copy');
+            if (copyText) {
+                try {
+                    await navigator.clipboard.writeText(copyText);
+                    const tooltip = trigger.querySelector('.copy-tooltip');
+                    if (tooltip) {
+                        tooltip.classList.remove('opacity-0', 'translate-y-2', 'pointer-events-none');
+                        tooltip.classList.add('opacity-100', 'translate-y-0');
+                        
+                        setTimeout(() => {
+                            tooltip.classList.remove('opacity-100', 'translate-y-0');
+                            tooltip.classList.add('opacity-0', 'translate-y-2', 'pointer-events-none');
+                        }, 2000);
+                    }
+                } catch (err) {
+                    console.error('Failed to copy!', err);
+                }
+            }
+        });
+    });
 });

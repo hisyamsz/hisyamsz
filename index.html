@@ -84,7 +84,8 @@
             <div class="relative mt-10 lg:mt-0 right-0 flex justify-center">
               <!-- Premium abstract blob shape behind the image -->
               <div
-                class="relative z-10 w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[460px] lg:h-[460px] rounded-[30%_70%_70%_30%/30%_30%_70%_70%] bg-[#FFF3E0] overflow-hidden flex items-end justify-center shadow-xl"
+                class="tilt-element relative z-10 w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[460px] lg:h-[460px] rounded-[30%_70%_70%_30%/30%_30%_70%_70%] bg-[#FFF3E0] overflow-hidden flex items-end justify-center shadow-xl"
+                style="transition: transform 0.15s ease-out;"
               >
                 <img
                   src="img/hisyamsz.png"
@@ -183,12 +184,73 @@
             </div>
           </div>
         </div>
+        <!-- Journey Sub-section (integrated inside About Me) -->
+        <div class="pt-20 border-t border-slate-100 mt-20">
+          <div class="w-full px-4 mb-16 text-center">
+            <h2 class="font-extrabold text-4xl text-dark mb-4 lg:text-5xl tracking-tight reveal">
+              Pendidikan & <span class="text-amber-700">Pengalaman</span>
+            </h2>
+            <p class="font-medium text-secondary md:text-lg max-w-2xl mx-auto reveal">
+              Perjalanan saya dalam menimba ilmu dan membangun solusi digital.
+            </p>
+          </div>
+          
+          <div class="w-full px-4 md:w-10/12 lg:w-8/12 mx-auto">
+            <div class="relative border-l-2 border-primary/30 ml-4 md:ml-8">
+              
+              <!-- Timeline Item 1: Experience -->
+              <div class="relative pl-8 pb-10 reveal">
+                <span class="absolute flex items-center justify-center w-6 h-6 rounded-full bg-primary -left-3 top-6 ring-4 ring-slate-50 z-10">
+                  <svg class="w-3 h-3 text-dark" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                </span>
+                <div class="bg-white p-6 rounded-3xl shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300">
+                  <time class="block mb-2 text-xs font-bold text-amber-700 uppercase tracking-wider">Apr 2026 - Jun 2026</time>
+                  <h3 class="text-xl font-extrabold text-dark mb-1 leading-tight">
+                    Full Stack Engineer (Project Kerja Praktik)
+                  </h3>
+                  <p class="text-sm font-semibold text-slate-500 mb-4">SMK Islamiyah Ciputat &middot; Internship</p>
+                  <p class="text-base font-normal text-secondary leading-relaxed max-w-[520px]">Berperan sebagai Full Stack Developer dalam kegiatan pengembangan dan digitalisasi layanan perpustakaan sekolah melalui pembangunan sistem informasi berbasis website.</p>
+                </div>
+              </div>
+
+              <!-- Timeline Item 2: Experience -->
+              <div class="relative pl-8 pb-10 reveal">
+                <span class="absolute flex items-center justify-center w-6 h-6 rounded-full bg-primary -left-3 top-6 ring-4 ring-slate-50 z-10">
+                  <svg class="w-3 h-3 text-dark" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                </span>
+                <div class="bg-white p-6 rounded-3xl shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300">
+                  <time class="block mb-2 text-xs font-bold text-amber-700 uppercase tracking-wider">Oct 2025 - Jan 2026</time>
+                  <h3 class="text-xl font-extrabold text-dark mb-1 leading-tight">
+                    Frontend Developer (Project PKM)
+                  </h3>
+                  <p class="text-sm font-semibold text-slate-500 mb-4">SMKN 6 Kota Tangerang Selatan &middot; Internship</p>
+                  <p class="text-base font-normal text-secondary leading-relaxed max-w-[520px]">Berperan sebagai Frontend Developer dalam kegiatan digitalisasi layanan perpustakaan sekolah, bertanggung jawab pada pengembangan antarmuka dan implementasi sistem perpustakaan.</p>
+                </div>
+              </div>
+
+              <!-- Timeline Item 3: Education -->
+              <div class="relative pl-8 reveal">
+                <span class="absolute flex items-center justify-center w-6 h-6 rounded-full bg-primary -left-3 top-6 ring-4 ring-slate-50 z-10">
+                  <svg class="w-3 h-3 text-dark" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                </span>
+                <div class="bg-white p-6 rounded-3xl shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300">
+                  <time class="block mb-2 text-xs font-bold text-amber-700 uppercase tracking-wider">Aug 2023 - Present</time>
+                  <h3 class="text-xl font-extrabold text-dark mb-1 leading-tight">
+                    Universitas Pamulang
+                  </h3>
+                  <p class="text-sm font-semibold text-slate-500 mb-4">Teknik Informatika &middot; Pendidikan Tinggi</p>
+                  <p class="text-base font-normal text-secondary leading-relaxed max-w-[520px]">Mahasiswa aktif program studi Teknik Informatika dengan fokus pada pengembangan rekayasa perangkat lunak dan teknologi web.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <!-- About End -->
 
     <!-- Skills Start -->
-    <section id="skills" class="pb-24 pt-28 bg-slate-50">
+    <section id="skills" class="pb-24 pt-28 bg-white">
       <div class="container">
         <div class="w-full px-4 mb-14 text-center">
           <h2
@@ -216,17 +278,17 @@
               <p class="text-secondary text-sm leading-relaxed mb-6">Membangun antarmuka interaktif dan responsif dengan fokus pada pengalaman pengguna yang luar biasa.</p>
             </div>
             <div class="flex flex-wrap gap-2 mt-auto">
-              <div class="flex items-center gap-1.5 bg-slate-50 border border-slate-100/60 rounded-xl px-3 py-1.5 text-xs font-semibold text-slate-700 hover:border-orange-500 hover:bg-orange-50 hover:text-orange-600 transition-colors" title="HTML 5"><img src="img/html-5.svg" alt="HTML 5" class="w-4 h-4 object-contain" /><span>HTML 5</span></div>
-              <div class="flex items-center gap-1.5 bg-slate-50 border border-slate-100/60 rounded-xl px-3 py-1.5 text-xs font-semibold text-slate-700 hover:border-blue-500 hover:bg-blue-50 hover:text-blue-600 transition-colors" title="CSS 3"><img src="img/css-3.svg" alt="CSS 3" class="w-4 h-4 object-contain" /><span>CSS 3</span></div>
-              <div class="flex items-center gap-1.5 bg-slate-50 border border-slate-100/60 rounded-xl px-3 py-1.5 text-xs font-semibold text-slate-700 hover:border-yellow-400 hover:bg-yellow-50 hover:text-yellow-700 transition-colors" title="JavaScript"><img src="img/javascript.svg" alt="JavaScript" class="w-4 h-4 object-contain" /><span>JavaScript</span></div>
-              <div class="flex items-center gap-1.5 bg-slate-50 border border-slate-100/60 rounded-xl px-3 py-1.5 text-xs font-semibold text-slate-700 hover:border-blue-600 hover:bg-blue-50 hover:text-blue-700 transition-colors" title="TypeScript"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" class="w-4 h-4 object-contain" /><span>TypeScript</span></div>
-              <div class="flex items-center gap-1.5 bg-slate-50 border border-slate-100/60 rounded-xl px-3 py-1.5 text-xs font-semibold text-slate-700 hover:border-cyan-400 hover:bg-cyan-50 hover:text-cyan-600 transition-colors" title="React.js"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React.js" class="w-4 h-4 object-contain" /><span>React.js</span></div>
-              <div class="flex items-center gap-1.5 bg-slate-50 border border-slate-100/60 rounded-xl px-3 py-1.5 text-xs font-semibold text-slate-700 hover:border-slate-800 hover:bg-slate-200 hover:text-slate-900 transition-colors" title="Next.js"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="Next.js" class="w-4 h-4 object-contain" /><span>Next.js</span></div>
-              <div class="flex items-center gap-1.5 bg-slate-50 border border-slate-100/60 rounded-xl px-3 py-1.5 text-xs font-semibold text-slate-700 hover:border-cyan-500 hover:bg-cyan-50 hover:text-cyan-600 transition-colors" title="Tailwind CSS"><img src="img/tailwindcss-icon.svg" alt="Tailwind CSS" class="w-4 h-4 object-contain" /><span>Tailwind CSS</span></div>
-              <div class="flex items-center gap-1.5 bg-slate-50 border border-slate-100/60 rounded-xl px-3 py-1.5 text-xs font-semibold text-slate-700 hover:border-purple-600 hover:bg-purple-50 hover:text-purple-700 transition-colors" title="Bootstrap"><img src="img/bootstrap.svg" alt="Bootstrap" class="w-4 h-4 object-contain" /><span>Bootstrap</span></div>
+              <div class="flex items-center gap-1.5 bg-white border border-slate-200/80 rounded-xl px-3 py-1.5 text-xs font-semibold text-slate-900 hover:border-orange-500 hover:bg-orange-50 hover:text-orange-600 transition-colors" title="HTML 5"><img src="img/html-5.svg" alt="HTML 5" class="w-4 h-4 object-contain" /><span>HTML 5</span></div>
+              <div class="flex items-center gap-1.5 bg-white border border-slate-200/80 rounded-xl px-3 py-1.5 text-xs font-semibold text-slate-900 hover:border-blue-500 hover:bg-blue-50 hover:text-blue-600 transition-colors" title="CSS 3"><img src="img/css-3.svg" alt="CSS 3" class="w-4 h-4 object-contain" /><span>CSS 3</span></div>
+              <div class="flex items-center gap-1.5 bg-white border border-slate-200/80 rounded-xl px-3 py-1.5 text-xs font-semibold text-slate-900 hover:border-yellow-400 hover:bg-yellow-50 hover:text-yellow-700 transition-colors" title="JavaScript"><img src="img/javascript.svg" alt="JavaScript" class="w-4 h-4 object-contain" /><span>JavaScript</span></div>
+              <div class="flex items-center gap-1.5 bg-white border border-slate-200/80 rounded-xl px-3 py-1.5 text-xs font-semibold text-slate-900 hover:border-blue-600 hover:bg-blue-50 hover:text-blue-700 transition-colors" title="TypeScript"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" class="w-4 h-4 object-contain" /><span>TypeScript</span></div>
+              <div class="flex items-center gap-1.5 bg-white border border-slate-200/80 rounded-xl px-3 py-1.5 text-xs font-semibold text-slate-900 hover:border-cyan-400 hover:bg-cyan-50 hover:text-cyan-600 transition-colors" title="React.js"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React.js" class="w-4 h-4 object-contain" /><span>React.js</span></div>
+              <div class="flex items-center gap-1.5 bg-white border border-slate-200/80 rounded-xl px-3 py-1.5 text-xs font-semibold text-slate-900 hover:border-slate-800 hover:bg-slate-200 hover:text-slate-900 transition-colors" title="Next.js"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="Next.js" class="w-4 h-4 object-contain" /><span>Next.js</span></div>
+              <div class="flex items-center gap-1.5 bg-white border border-slate-200/80 rounded-xl px-3 py-1.5 text-xs font-semibold text-slate-900 hover:border-cyan-500 hover:bg-cyan-50 hover:text-cyan-600 transition-colors" title="Tailwind CSS"><img src="img/tailwindcss-icon.svg" alt="Tailwind CSS" class="w-4 h-4 object-contain" /><span>Tailwind CSS</span></div>
+              <div class="flex items-center gap-1.5 bg-white border border-slate-200/80 rounded-xl px-3 py-1.5 text-xs font-semibold text-slate-900 hover:border-purple-600 hover:bg-purple-50 hover:text-purple-700 transition-colors" title="Bootstrap"><img src="img/bootstrap.svg" alt="Bootstrap" class="w-4 h-4 object-contain" /><span>Bootstrap</span></div>
             </div>
           </div>
-
+ 
           <!-- Backend Card -->
           <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between min-h-[400px] group">
             <div>
@@ -241,13 +303,13 @@
               <p class="text-secondary text-sm leading-relaxed mb-6">Merancang arsitektur logika aplikasi, keamanan, dan manajemen data yang tangguh di sisi server.</p>
             </div>
             <div class="flex flex-wrap gap-2 mt-auto">
-              <div class="flex items-center gap-1.5 bg-slate-50 border border-slate-100/60 rounded-xl px-3 py-1.5 text-xs font-semibold text-slate-700 hover:border-green-600 hover:bg-green-50 hover:text-green-700 transition-colors" title="Node.js"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js" class="w-4 h-4 object-contain" /><span>Node.js</span></div>
-              <div class="flex items-center gap-1.5 bg-slate-50 border border-slate-100/60 rounded-xl px-3 py-1.5 text-xs font-semibold text-slate-700 hover:border-slate-600 hover:bg-slate-200 hover:text-slate-800 transition-colors" title="Express.js"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" alt="Express.js" class="w-4 h-4 object-contain" /><span>Express.js</span></div>
-              <div class="flex items-center gap-1.5 bg-slate-50 border border-slate-100/60 rounded-xl px-3 py-1.5 text-xs font-semibold text-slate-700 hover:border-blue-800 hover:bg-blue-100 hover:text-blue-900 transition-colors" title="Prisma ORM"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg" alt="Prisma ORM" class="w-4 h-4 object-contain" /><span>Prisma ORM</span></div>
-              <div class="flex items-center gap-1.5 bg-slate-50 border border-slate-100/60 rounded-xl px-3 py-1.5 text-xs font-semibold text-slate-700 hover:border-blue-500 hover:bg-blue-50 hover:text-blue-600 transition-colors" title="MySQL"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL" class="w-4 h-4 object-contain" /><span>MySQL</span></div>
+              <div class="flex items-center gap-1.5 bg-white border border-slate-200/80 rounded-xl px-3 py-1.5 text-xs font-semibold text-slate-900 hover:border-green-600 hover:bg-green-50 hover:text-green-700 transition-colors" title="Node.js"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js" class="w-4 h-4 object-contain" /><span>Node.js</span></div>
+              <div class="flex items-center gap-1.5 bg-white border border-slate-200/80 rounded-xl px-3 py-1.5 text-xs font-semibold text-slate-900 hover:border-slate-600 hover:bg-slate-200 hover:text-slate-800 transition-colors" title="Express.js"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" alt="Express.js" class="w-4 h-4 object-contain" /><span>Express.js</span></div>
+              <div class="flex items-center gap-1.5 bg-white border border-slate-200/80 rounded-xl px-3 py-1.5 text-xs font-semibold text-slate-900 hover:border-blue-800 hover:bg-blue-100 hover:text-blue-900 transition-colors" title="Prisma ORM"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg" alt="Prisma ORM" class="w-4 h-4 object-contain" /><span>Prisma ORM</span></div>
+              <div class="flex items-center gap-1.5 bg-white border border-slate-200/80 rounded-xl px-3 py-1.5 text-xs font-semibold text-slate-900 hover:border-blue-500 hover:bg-blue-50 hover:text-blue-600 transition-colors" title="MySQL"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL" class="w-4 h-4 object-contain" /><span>MySQL</span></div>
             </div>
           </div>
-
+ 
           <!-- Tools Card -->
           <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between min-h-[400px] md:col-span-2 lg:col-span-1 group">
             <div>
@@ -263,10 +325,10 @@
               <p class="text-secondary text-sm leading-relaxed mb-6">Memanfaatkan alat bantu pengembangan untuk kolaborasi yang efisien dan alur kerja yang optimal.</p>
             </div>
             <div class="flex flex-wrap gap-2 mt-auto">
-              <div class="flex items-center gap-1.5 bg-slate-50 border border-slate-100/60 rounded-xl px-3 py-1.5 text-xs font-semibold text-slate-700 hover:border-orange-600 hover:bg-orange-50 hover:text-orange-700 transition-colors" title="Git"><img src="img/git-icon.svg" alt="Git" class="w-4 h-4 object-contain" /><span>Git</span></div>
-              <div class="flex items-center gap-1.5 bg-slate-50 border border-slate-100/60 rounded-xl px-3 py-1.5 text-xs font-semibold text-slate-700 hover:border-slate-800 hover:bg-slate-200 hover:text-slate-900 transition-colors" title="GitHub"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" class="w-4 h-4 object-contain" /><span>GitHub</span></div>
-              <div class="flex items-center gap-1.5 bg-slate-50 border border-slate-100/60 rounded-xl px-3 py-1.5 text-xs font-semibold text-slate-700 hover:border-blue-500 hover:bg-blue-50 hover:text-blue-600 transition-colors" title="VS Code"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="VS Code" class="w-4 h-4 object-contain" /><span>VS Code</span></div>
-              <div class="flex items-center gap-1.5 bg-slate-50 border border-slate-100/60 rounded-xl px-3 py-1.5 text-xs font-semibold text-slate-700 hover:border-pink-500 hover:bg-pink-50 hover:text-pink-600 transition-colors" title="Figma"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma" class="w-4 h-4 object-contain" /><span>Figma</span></div>
+              <div class="flex items-center gap-1.5 bg-white border border-slate-200/80 rounded-xl px-3 py-1.5 text-xs font-semibold text-slate-900 hover:border-orange-600 hover:bg-orange-50 hover:text-orange-700 transition-colors" title="Git"><img src="img/git-icon.svg" alt="Git" class="w-4 h-4 object-contain" /><span>Git</span></div>
+              <div class="flex items-center gap-1.5 bg-white border border-slate-200/80 rounded-xl px-3 py-1.5 text-xs font-semibold text-slate-900 hover:border-slate-800 hover:bg-slate-200 hover:text-slate-900 transition-colors" title="GitHub"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" class="w-4 h-4 object-contain" /><span>GitHub</span></div>
+              <div class="flex items-center gap-1.5 bg-white border border-slate-200/80 rounded-xl px-3 py-1.5 text-xs font-semibold text-slate-900 hover:border-blue-500 hover:bg-blue-50 hover:text-blue-600 transition-colors" title="VS Code"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="VS Code" class="w-4 h-4 object-contain" /><span>VS Code</span></div>
+              <div class="flex items-center gap-1.5 bg-white border border-slate-200/80 rounded-xl px-3 py-1.5 text-xs font-semibold text-slate-900 hover:border-pink-500 hover:bg-pink-50 hover:text-pink-600 transition-colors" title="Figma"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma" class="w-4 h-4 object-contain" /><span>Figma</span></div>
             </div>
           </div>
         </div>
@@ -425,9 +487,9 @@
               </p>
 
               <div class="space-y-6">
-                <div class="flex items-start">
+                <div class="flex items-start copy-trigger cursor-pointer group relative" data-copy="hisyam.s901@gmail.com" title="Klik untuk menyalin">
                   <svg
-                    class="w-6 h-6 mr-4 mt-1"
+                    class="w-6 h-6 mr-4 mt-1 transition-transform group-hover:scale-110 group-hover:text-amber-500"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -440,8 +502,13 @@
                     />
                   </svg>
                   <div>
-                    <h4 class="font-semibold text-lg">Email</h4>
-                    <p class="text-white/80">hisyam.s901@gmail.com</p>
+                    <h4 class="font-semibold text-lg group-hover:text-amber-500 transition-colors">Email</h4>
+                    <p class="text-white/80 group-hover:text-white transition-colors">hisyam.s901@gmail.com</p>
+                  </div>
+                  <!-- Tooltip -->
+                  <div class="absolute -top-10 left-12 bg-white text-dark text-xs font-bold px-3 py-1.5 rounded-lg shadow-lg opacity-0 translate-y-2 pointer-events-none transition-all duration-300 copy-tooltip">
+                    Tersalin! ✓
+                    <div class="absolute -bottom-1 left-4 w-2 h-2 bg-white rotate-45"></div>
                   </div>
                 </div>
                 <div class="flex items-start">
