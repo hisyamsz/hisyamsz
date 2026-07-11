@@ -54,3 +54,55 @@ const typeEffect = () => {
 };
 
 typeEffect();
+
+// --- UX Enhancements ---
+
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. Scroll Reveal Animations
+    // Select elements to animate: section headers, cards, about text
+    const revealElements = document.querySelectorAll('section > .container > div:first-child, .grid > div, .grid > portfolio-card, #about .lg\\:w-1\\/2, #about .lg\\:w-7\\/12');
+    
+    revealElements.forEach(el => {
+        el.classList.add('reveal');
+    });
+
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                // Optional: stop observing once revealed
+                // observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal').forEach(el => {
+        observer.observe(el);
+    });
+
+    // 2. Back to Top Button
+    const backToTopBtn = document.getElementById('back-to-top');
+    if (backToTopBtn) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
+                backToTopBtn.classList.add('opacity-100', 'translate-y-0');
+            } else {
+                backToTopBtn.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
+                backToTopBtn.classList.remove('opacity-100', 'translate-y-0');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+});

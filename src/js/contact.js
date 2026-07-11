@@ -20,7 +20,7 @@
     let hint = el.parentElement.querySelector('.field-error');
     if (!hint) {
       hint = document.createElement('p');
-      hint.className = 'field-error mt-1.5 text-xs font-semibold text-red-500';
+      hint.className = 'field-error mt-1.5 text-xs font-semibold text-red-500 animate-slide-in-up';
       el.parentElement.appendChild(hint);
     }
     hint.textContent = msg;
