@@ -6,7 +6,7 @@ class NavHeader extends HTMLElement {
 
   render() {
     this.innerHTML = `
-      <header class="absolute top-0 left-0 z-10 flex items-center w-full bg-transparent">
+      <header class="absolute top-0 left-0 z-50 flex items-center w-full bg-transparent">
         <div class="container">
           <div class="relative flex items-center justify-between">
             <div class="px-4">
