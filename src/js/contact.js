@@ -84,25 +84,39 @@
 
     if (hasError) return;
 
-    const to      = 'hisyam.s901@gmail.com';
-    const subject = encodeURIComponent(`[Portofolio] Pesan dari ${name}`);
-    const body    = encodeURIComponent(
-      `Halo Hisyam,\n\nNama   : ${name}\nEmail  : ${email}\n\nPesan :\n${message}\n\nSalam,\n${name}`
-    );
-
-    window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
-
-    // Show success feedback
-    const successMsg = document.getElementById('form-success');
+    const submitBtn  = document.getElementById('submit-btn');
+    const btnSpinner = document.getElementById('btn-spinner');
+    const btnIcon    = document.getElementById('btn-icon');
     const btnText    = document.getElementById('btn-text');
-    if (successMsg) {
-      successMsg.classList.remove('hidden');
-      btnText.textContent = 'Terkirim ✓';
+    const successMsg = document.getElementById('form-success');
+
+    // Set loading state
+    if (submitBtn) submitBtn.disabled = true;
+    if (btnSpinner) btnSpinner.classList.remove('hidden');
+    if (btnIcon) btnIcon.classList.add('hidden');
+    if (btnText) btnText.textContent = 'Mengirim...';
+
+    setTimeout(() => {
+      const to      = 'hisyam.s901@gmail.com';
+      const subject = encodeURIComponent(`[Portofolio] Pesan dari ${name}`);
+      const body    = encodeURIComponent(
+        `Halo Hisyam,\n\nNama   : ${name}\nEmail  : ${email}\n\nPesan :\n${message}\n\nSalam,\n${name}`
+      );
+
+      window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+
+      // Show success feedback
+      if (btnSpinner) btnSpinner.classList.add('hidden');
+      if (btnIcon) btnIcon.classList.remove('hidden');
+      if (btnText) btnText.textContent = 'Terkirim ✓';
+      if (successMsg) successMsg.classList.remove('hidden');
+
       setTimeout(() => {
-        successMsg.classList.add('hidden');
-        btnText.textContent = 'Kirim Pesan';
+        if (successMsg) successMsg.classList.add('hidden');
+        if (btnText) btnText.textContent = 'Kirim Pesan';
+        if (submitBtn) submitBtn.disabled = false;
         form.reset();
       }, 5000);
-    }
+    }, 800);
   });
 })();

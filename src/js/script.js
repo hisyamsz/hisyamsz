@@ -105,4 +105,38 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    // 3. Portfolio Filtering
+    const filterButtons = document.querySelectorAll('.portfolio-filter-btn');
+    const portfolioCards = document.querySelectorAll('#portfolio-grid > portfolio-card');
+
+    if (filterButtons.length && portfolioCards.length) {
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filterValue = btn.getAttribute('data-filter');
+
+                // Update active states
+                filterButtons.forEach(b => {
+                    b.classList.remove('bg-primary', 'text-dark', 'border-primary');
+                    b.classList.add('border-slate-200', 'text-slate-600');
+                });
+                btn.classList.add('bg-primary', 'text-dark', 'border-primary');
+                btn.classList.remove('border-slate-200', 'text-slate-600');
+
+                // Filter cards
+                portfolioCards.forEach(card => {
+                    const category = card.getAttribute('category');
+                    if (filterValue === 'all' || category === filterValue) {
+                        card.classList.remove('hidden');
+                        // Briefly timeout to allow transition to trigger
+                        setTimeout(() => {
+                            card.classList.add('active');
+                        }, 50);
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    }
 });
