@@ -1,108 +1,48 @@
-# Personal Portfolio - Hisyam Santoso 🚀
+# Hi, I'm Hisyam Santoso 👋
 
-Selamat datang di repositori website portfolio pribadi saya! Website ini dirancang untuk menampilkan profil, keterampilan (skills), proyek-proyek terbaru (latest works), serta menyediakan formulir kontak terintegrasi untuk kolaborasi lebih lanjut.
-
-Website ini dibangun menggunakan **HTML5**, **JavaScript (ES6+)** dengan pendekatan **Native Web Components**, dan dibalut dengan keindahan **Tailwind CSS**.
+I'm **Hisyam Santoso**, an Informatics Engineering student aspiring to become a Software Engineer. I enjoy creating modern web applications, learning new technologies, and continuously improving my skills through hands-on projects. Currently exploring Go, Docker, CI/CD, and scalable application architecture alongside frontend development.
 
 ---
 
-## 🌟 Fitur Utama
+### 🚀 About Me
 
-- 📱 **Desain Modern & Responsif**: Tampilan yang dioptimalkan untuk perangkat mobile, tablet, hingga desktop menggunakan Tailwind CSS.
-- ⚙️ **Native Web Components**: Menggunakan Custom Elements (`nav-header`, `site-footer`, `portfolio-card`) untuk modularitas kode yang bersih dan terstruktur tanpa dependensi framework besar.
-- ✍️ **Animasi Auto-Type**: Efek mengetik dinamis pada bagian Hero Section menggunakan JavaScript murni.
-- 🛠️ **Skills Showcase**: Pengelompokan keterampilan yang rapi (Frontend, Backend & Database, Tools & DevOps) dengan ikon teknologi modern.
-- 💼 **Project Showcase (Latest Works)**: Menampilkan daftar proyek unggulan seperti **LibraFlow LMS** dan **Sistem Perpustakaan (PKM)** lengkap dengan link repositori / demo langsung.
-- ✉️ **Formulir Kontak Interaktif**: Form yang terintegrasi dengan client email untuk mempermudah koneksi langsung.
+- 🎓 **Education**: Informatics Engineering Student
+- 💻 **Career Goal**: Aspiring Software Engineer focusing on Frontend & Backend development
+- 🐧 **OS**: Linux (Fedora) user for my development workflow
+- 🎨 **Interests**: Clean UI/UX, application performance, and software engineering best practices
 
 ---
 
-## 🛠️ Tech Stack & Alat Pengembangan
+### 🛠️ Tech Stack & Skills
 
-### Core Technologies
-- **HTML5 & CSS3**
-- **JavaScript (ES6+)**
-- **Tailwind CSS v3.4**
-
-### Build Tools & Libraries
-- **concurrently**: Menjalankan proses watch Tailwind CSS dan server lokal secara bersamaan.
-- **live-server**: Server lokal otomatis (live reload) untuk mempermudah proses development.
+- **Frontend**: HTML5, CSS3, JavaScript (ES6+), React, Next.js, NextUI, Tailwind CSS
+- **Backend & Database**: Go (Golang), Node.js, Express, PostgreSQL, MySQL
+- **DevOps & Tools**: Docker, CI/CD, Git, GitHub
 
 ---
 
-## 📂 Struktur Direktori
+### 💼 Featured Projects
 
-```text
-hisyamsz/
-├── img/                  # Aset gambar, ikon, dan screenshot proyek
-├── src/
-│   ├── js/
-│   │   ├── components/   # Native Web Components (Navbar, Footer, PortfolioCard)
-│   │   ├── contact.js    # Logika interaksi & feedback formulir kontak
-│   │   ├── script.js     # Animasi pengetikan teks dinamis (auto-type)
-│   │   └── type.js
-│   ├── input.css         # Entry CSS utama untuk Tailwind
-│   └── output.css        # File CSS yang dikompilasi oleh Tailwind CLI
-├── index.html            # Entry point halaman web utama
-├── package.json          # Konfigurasi dependensi npm dan skrip development
-├── tailwind.config.js    # Kustomisasi tema, warna, dan font Tailwind
-└── README.md             # Dokumentasi proyek (file ini)
-```
+* **[LibraFlow LMS](https://github.com/hisyamsz/libraflow)** - Enterprise-grade library management system.
+  - *Features*: Role-Based Access Control, Real-time Dashboard, Excel Import/Export, OpenAPI Swagger docs.
+* **[Sistem Perpustakaan (PKM)](https://github.com/hisyamsz/fe-perpustakaan)** - Digital administration library system registered in HKI/DJKI.
+  - *Tech*: Next.js 15, React 19, TypeScript, NextUI, NextAuth.
+* **[Web Portfolio](https://github.com/hisyamsz/hisyamsz)** - My personal portfolio website (source code hosted in this repo!).
+  - *Tech*: HTML5, Vanilla JS Custom Elements, Tailwind CSS.
 
 ---
 
-## 🚀 Cara Menjalankan Proyek Secara Lokal
+### 📬 Connect with Me
 
-Ikuti langkah-langkah berikut untuk menjalankan proyek di komputer Anda:
-
-### Prasyarat
-Pastikan Anda sudah menginstal [Node.js](https://nodejs.org/) (versi LTS sangat disarankan) di komputer Anda.
-
-### Langkah-langkah
-
-1. **Clone Repositori**
-   ```bash
-   git clone https://github.com/hisyamsz/web-portofolio.git
-   cd web-portofolio/hisyamsz
-   ```
-
-2. **Instal Dependensi**
-   Instal semua paket pendukung yang diperlukan untuk development (seperti Tailwind CSS, Live-Server, dll):
-   ```bash
-   npm install
-   ```
-
-3. **Jalankan Development Server**
-   Jalankan perintah berikut untuk memulai server lokal dengan fitur live-reload serta kompilasi otomatis Tailwind CSS:
-   ```bash
-   npm run dev
-   ```
-   Setelah server berjalan, website akan otomatis dapat diakses melalui browser Anda di alamat: `http://localhost:3000`.
+- 📧 **Email**: [hisyam.s901@gmail.com](mailto:hisyam.s901@gmail.com)
+- 📍 **Location**: Tangerang, Banten, Indonesia
+- 🌐 **Portfolio**: [hisyamsz.github.io](https://hisyamsz.github.io/)
 
 ---
 
-## 💼 Proyek Unggulan
-
-Beberapa proyek utama yang ditampilkan di dalam portfolio ini:
-
-1. **LibraFlow LMS** 📚
-   - Sistem Manajemen Perpustakaan Digital kelas enterprise.
-   - Fitur: Role-Based Access Control, Dashboard Statistik Real-time, Import/Export Excel, Dokumentasi OpenAPI Swagger.
-   - Repo: [github.com/hisyamsz/libraflow](https://github.com/hisyamsz/libraflow)
-
-2. **Sistem Perpustakaan (PKM)** 🏫
-   - Digitalisasi administrasi perpustakaan hasil PKM yang terdaftar HKI/DJKI.
-   - Teknologi: Next.js 15, React 19, TypeScript, NextUI, NextAuth.
-   - Repo: [github.com/hisyamsz/fe-perpustakaan](https://github.com/hisyamsz/fe-perpustakaan)
-
-3. **Astro Blog** 📝
-   - Proyek blog statis berbasis Markdown dengan performa tinggi menggunakan Astro.js.
-   - Demo: [astro-blog-delta-beryl.vercel.app](https://astro-blog-delta-beryl.vercel.app)
-
----
-
-## 📞 Hubungi Saya
-
-- **Nama**: Hisyam Santoso
-- **Email**: [hisyam.s901@gmail.com](mailto:hisyam.s901@gmail.com)
-- **Lokasi**: Tangerang, Banten, Indonesia
+<details>
+  <summary>🛠️ <b>Developer & Repo Info</b></summary>
+  <br />
+  This repository is also used to host the source code of my personal portfolio website. 
+  For setup instructions, features, directory structure, and local run steps, please see the <b><a href="./PORTFOLIO.md">PORTFOLIO.md</a></b> file.
+</details>
