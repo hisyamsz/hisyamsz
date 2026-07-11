@@ -43,6 +43,15 @@ class NavHeader extends HTMLElement {
         hamburger.classList.toggle('hamburger-active');
         navMenu.classList.toggle('hidden');
       });
+
+      // Auto-close menu when a link is clicked
+      const navLinks = navMenu.querySelectorAll('.nav-link');
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove('hamburger-active');
+          navMenu.classList.add('hidden');
+        });
+      });
     }
 
     const handleScroll = () => {

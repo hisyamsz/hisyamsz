@@ -14,8 +14,8 @@ class PortfolioCard extends HTMLElement {
 
     this.innerHTML = `
       <div class="bg-white p-6 rounded-3xl shadow-sm hover:shadow-xl border border-slate-100 w-full h-full flex flex-col transition-all duration-300 group">
-        <a href="${link}" target="_blank" title="${title}" class="flex-grow block overflow-hidden rounded-2xl mb-5">
-          <img src="${image}" alt="${title}" class="${imgClasses} transform transition-transform duration-500 group-hover:scale-110" />
+        <a href="${link}" target="_blank" title="${title}" class="flex-grow block overflow-hidden rounded-2xl mb-5 relative bg-slate-200 animate-pulse">
+          <img src="${image}" alt="${title}" class="${imgClasses} transform transition-all duration-500 group-hover:scale-110 opacity-0" onload="this.parentElement.classList.remove('animate-pulse', 'bg-slate-200'); this.classList.remove('opacity-0');" />
         </a>
         <div class="flex-grow flex flex-col">
           <a href="${link}" target="_blank" class="mb-3 text-2xl font-bold text-dark group-hover:text-amber-700 transition-colors duration-300 flex items-center">
