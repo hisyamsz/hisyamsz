@@ -8,7 +8,6 @@ I'm **Hisyam Santoso**, an Informatics Engineering student aspiring to become a 
 
 - 🎓 **Education**: Informatics Engineering Student
 - 💻 **Career Goal**: Aspiring Software Engineer focusing on Frontend & Backend development
-- 🐧 **OS**: Linux (Fedora) user for my development workflow
 - 🎨 **Interests**: Clean UI/UX, application performance, and software engineering best practices
 
 ---
@@ -23,12 +22,12 @@ I'm **Hisyam Santoso**, an Informatics Engineering student aspiring to become a 
 
 ### 💼 Featured Projects
 
-* **[LibraFlow LMS](https://github.com/hisyamsz/libraflow)** - Enterprise-grade library management system.
-  - *Features*: Role-Based Access Control, Real-time Dashboard, Excel Import/Export, OpenAPI Swagger docs.
-* **[Sistem Perpustakaan (PKM)](https://github.com/hisyamsz/fe-perpustakaan)** - Digital administration library system registered in HKI/DJKI.
-  - *Tech*: Next.js 15, React 19, TypeScript, NextUI, NextAuth.
-* **[Web Portfolio](https://github.com/hisyamsz/hisyamsz)** - My personal portfolio website (source code hosted in this repo!).
-  - *Tech*: HTML5, Vanilla JS Custom Elements, Tailwind CSS.
+- **[LibraFlow LMS](https://github.com/hisyamsz/libraflow)** - Enterprise-grade library management system.
+  - _Features_: Role-Based Access Control, Real-time Dashboard, Excel Import/Export, OpenAPI Swagger docs.
+- **[Sistem Perpustakaan (PKM)](https://github.com/hisyamsz/fe-perpustakaan)** - Digital administration library system registered in HKI/DJKI.
+  - _Tech_: Next.js 15, React 19, TypeScript, NextUI, NextAuth.
+- **[Web Portfolio](https://github.com/hisyamsz/hisyamsz)** - My personal portfolio website (source code hosted in this repo!).
+  - _Tech_: HTML5, Vanilla JS Custom Elements, Tailwind CSS.
 
 ---
 
