@@ -18,7 +18,7 @@ body {
 }
 
 .active {
-    @apply text-primary;
+    @apply text-amber-700 font-semibold;
 }
 
 .hamburger-active > span:nth-child(1) {

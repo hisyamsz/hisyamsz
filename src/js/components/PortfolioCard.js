@@ -18,7 +18,7 @@ class PortfolioCard extends HTMLElement {
           <img src="${image}" alt="${title}" class="${imgClasses} transform transition-transform duration-500 group-hover:scale-110" />
         </a>
         <div class="flex-grow flex flex-col">
-          <a href="${link}" target="_blank" class="mb-3 text-2xl font-bold text-dark group-hover:text-primary transition-colors duration-300 flex items-center">
+          <a href="${link}" target="_blank" class="mb-3 text-2xl font-bold text-dark group-hover:text-amber-700 transition-colors duration-300 flex items-center">
             ${title}
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2 opacity-0 -translate-x-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
