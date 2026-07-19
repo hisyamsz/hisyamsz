@@ -35,7 +35,7 @@ I'm **Hisyam Santoso**, an Informatics Engineering student aspiring to become a 
 
 - 📧 **Email**: [hisyam.s901@gmail.com](mailto:hisyam.s901@gmail.com)
 - 📍 **Location**: Tangerang, Banten, Indonesia
-- 🌐 **Portfolio**: [hisyamsz.github.io](https://hisyamsz.github.io/)
+- 🌐 **Portfolio**: [hisyamsantoso.my.id](https://hisyamsantoso.my.id)
 
 ---
 
